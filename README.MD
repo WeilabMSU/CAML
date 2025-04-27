@@ -19,16 +19,11 @@
 - [Introduction](#introduction)
 - [Model Architecture](#model-architecture)
 - [Prerequisites](#prerequisites)
-- [Visualization tools](#Visualization-tools)
 - [Datasets](#datasets)
-- [Modeling with mGLI-based features](#Modeling-with-mGLI-based-features)
-    - [mGLI-based B-factor prediction](#i-mgli-based-b-factor-prediction)
-    - [Generation of mGLI-based features for protein-ligand complex](#II-Generation-of-mGLI-based-features-for-protein-ligand-complex)
-    - [Generation of mGLI-based features for small molecule](#III-Generation-of-mGLI-based-features-for-small-molecule)
-    - [Generation of sequence-based features for protein or small molecules](#IV-Generation-of-sequence-based-features-for-protein-or-small-molecules)
+- [Modeling with PSRT-based features](#Modeling-with-PSRT-based-features)
+    - [Generation of PSRT-based features for protein-ligand complex](#II-Generation-of-PSRT-based-features-for-protein-ligand-complex)
 
 - [Results](#results)
-    - [I. Modeling the B-factor datasets]()
     - [II. Modeling the PDBbind datasets]()
 - [License](#license)
 - [Citation](#citation)
@@ -71,8 +66,8 @@ A brief introduction about the benchmark datasets.
 
 | Datasets                |Total    | Training Set                 | Test Set                                             |
 |-|-----------------------------|------------------------------|------------------------------                        |
-| PDBbind-v2016       |4057|3767  [Label](https://weilab.math.msu.edu/Downloads/mGLI-KDA/PDBbind.zip)                        | 290 [Label](https://weilab.math.msu.edu/Downloads/CAML/PDBbind.zip)                         |
-| Metalloprotein-ligand       |2463|1845  [Label](https://weilab.math.msu.edu/Downloads/mGLI-KDA/PDBbind.zip)                        | 618 [Label](https://weilab.math.msu.edu/Downloads/CAML/Metalloprotein-ligand.zip)                         |
+| PDBbind-v2016       |4057|3767  [Label](https://weilab.math.msu.edu/Downloads/PSRT/PDBbind.zip)                        | 290 [Label](https://weilab.math.msu.edu/Downloads/CAML/PDBbind.zip)                         |
+| Metalloprotein-ligand       |2463|1845  [Label](https://weilab.math.msu.edu/Downloads/PSRT/PDBbind.zip)                        | 618 [Label](https://weilab.math.msu.edu/Downloads/CAML/Metalloprotein-ligand.zip)                         |
 
 
 - PDBbind-v2016: the protein-ligand complex structures. Download from [PDBbind database](http://www.pdbbind.org.cn/)
