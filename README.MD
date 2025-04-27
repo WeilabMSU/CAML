@@ -83,22 +83,15 @@ A brief introduction about the benchmark datasets.
 ---
 
 ## Modeling with mGLI-based features
-### I. mGLI-based B-factor prediction
 
-```shell
-# examples, dataset_name options: Bfactor-Set364, Bfactor-large, Bfactor-medium, Bfactor-small
-python codes/mGLI-Bfactor.py --dataset_name Bfactor-small
-```
-
-
-### II. Generation of mGLI-based features for protein-ligand complex
+### I. Generation of mGLI-based features for protein-ligand complex
 Example with PDB 2eg8, generating mGLI features with "bin" manner and "median" statistics for atom-by-atom Gauss linking integral.
 "all" can also be used and "std" statistics is also available for atom-by-atom Gauss linking integral, output: 2eg8-complex-median-bin.npy
 ```shell
 python codes/mGLI-protein-ligand.py --pdbid 2eg8 --bin_or_all bin --integral_type median
 ```
 
-### III. Generation of mGLI-based features for small molecule
+### II. Generation of mGLI-based features for small molecule
 Example with the ligand in protein complex PDB 2eg8, generating mGLI features with "bin" manner and "median" statistics for atom-by-atom Gauss linking integral. Statistics of "all" can also be used.  output: 2eg8-ligand-median-bin.npy
 ```shell
 python codes/mGLI-ligand.py --mol2_path datasets/PDBbind/2eg8/2eg8_ligand.mol2 --mol2_id 2eg8 --bin_or_all bin --integral_type median
@@ -107,7 +100,7 @@ python codes/mGLI-ligand.py --mol2_path datasets/PDBbind/2eg8/2eg8_ligand.mol2 -
 Protein sequence embeddings were generated with [Transformer Protein language model](https://github.com/facebookresearch/esm).
 
 Small molecular sequence embeddings were generated with
-[Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels), and [Autoencoder small molecule language model](https://github.com/jrwnter/cddd)
+[Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels).
 
 ---
 
