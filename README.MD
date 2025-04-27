@@ -86,17 +86,16 @@ A brief introduction about the benchmark datasets.
 Example with PDB 2eg8, generating PSRT features.
 Output: 2eg8-PSRT.npy
 ### IV. Generation of sequence-based features for protein and small molecules
-Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm).
+Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm) [Rives2021].
 
 Small molecular sequence embeddings were generated with
-[Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels). The input small molecular sequence is SMILES string. Instructions on molecular descriptors using this language model is provided in the github.
+[Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels) [Chen2021]. The input small molecular sequence is SMILES string. Instructions on molecular descriptors using this language model is provided in the github.
 
 ---
 
 ## Results
 
 ### I. Modeling the Metalloprotein-ligand datasets
-
 
 |Datasets                                        | Training Set                  | Test Set| PCC | RMSE (kcal/mol) |
 |-------------------------------------------------|-------------                  |---------|-    |-                |
@@ -117,4 +116,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citation
 
 - [Jiang2023] Dejun Jiang, Zhaofeng Ye, Chang-Yu Hsieh, Ziyi Yang, Xujun Zhang, Yu Kang, Hongyan Du, Zhenxing Wu, Jike Wang, Yundian Zeng, et al. Metalprognet: a structure-based deep graph model for metalloprotein–ligand interaction predictions. Chemical Science, 14(8):2054–2069, 2023.
+- [Chen2021] Dong Chen, Jiaxin Zheng, Guo-Wei Wei, and Feng Pan. Extracting predictive representations from hundreds of millions of molecules. The Journal of Physical Chemistry Letters, 12(44):10793–10801, 2021.
+- [Rives2021] Rives, Alexander, Joshua Meier, Tom Sercu, Siddharth Goyal, Zeming Lin, Jason Liu, Demi Guo et al. "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences." Proceedings of the National Academy of Sciences 118, no. 15 (2021): e2016239118.
 ---
