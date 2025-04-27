@@ -63,8 +63,6 @@ Further explain the details in the [paper](https://github.com/WeilabMSU/CAML), p
 - scikit-learn              1.0.2
 - python                    3.10.12
 - biopandas                 0.4.1
-- Biopython                 1.75
-
 --- 
 
 ## Datasets
@@ -86,10 +84,7 @@ A brief introduction about the benchmark datasets.
 
 ### I. Generation of PSRT-based features for protein-ligand complex
 Example with PDB 2eg8, generating PSRT features.
-Output: 2eg8-complex-median-bin.npy
-```shell
-python codes/PSRT-protein-ligand.py --pdbid 2eg8 --bin_or_all bin --integral_type median
-```
+Output: 2eg8-PSRT.npy
 ### IV. Generation of sequence-based features for protein and small molecules
 Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm).
 
