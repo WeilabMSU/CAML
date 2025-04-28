@@ -42,7 +42,7 @@ Recently, Suwayyid and Wei have introduced commutative algebra as an emerging pa
 
 An illustration of the filtration process of the persistent commutative algebra is shown below.
 
-![Model Architecture](scheme8.png)
+![Model Architecture](scheme.png)
 
 Further explain the details in the [paper](https://github.com/WeilabMSU/CAML), providing context and additional information about the architecture and its components.
 
