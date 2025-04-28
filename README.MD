@@ -66,13 +66,13 @@ A brief introduction about the benchmark datasets.
 
 | Datasets                |Total    | Training Set                 | Test Set                                             |
 |-|-----------------------------|------------------------------|------------------------------                        |
-| PDBbind-v2016       |4057|3767  [Label](https://weilab.math.msu.edu/Downloads/PSRT/PDBbind.zip)                        | 290 [Label](https://weilab.math.msu.edu/Downloads/CAML/PDBbind.zip)                         |
-| Metalloprotein-ligand       |2463|1845  [Label](https://weilab.math.msu.edu/Downloads/PSRT/PDBbind.zip)                        | 618 [Label](https://weilab.math.msu.edu/Downloads/CAML/Metalloprotein-ligand.zip)                         |
+| PDBbind-v2016       |4057|3767  [data](./dataset)                        | 290 [data](./dataset)                         |
+| Metalloprotein-ligand       |2463|1845  [data](https://weilab.math.msu.edu/Downloads/PSRT/PDBbind.zip)                        | 618 [data](./dataset)                         |
 
 
 - PDBbind-v2016: the protein-ligand complex structures. Download from [PDBbind database](http://www.pdbbind.org.cn/)
 - Metalloprotein-ligand: the metalloprotein-ligand complex structures were complied from PDBbind-v2020 ([PDBbind database](http://www.pdbbind.org.cn/)) by [Jiang2023]
-- Label: the .csv file, which contains the protein ID and corresponding binding affinity for PDBbind data.
+- data: the .csv file, which contains the protein ID and corresponding binding affinity for PDBbind data.
 ---
 
 ## Modeling with PSRT-based features
