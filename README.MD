@@ -71,7 +71,7 @@ A brief introduction about the benchmark datasets.
 
 
 - PDBbind-v2016: the protein-ligand complex structures. Download from [PDBbind database](http://www.pdbbind.org.cn/)
-- Metalloprotein-ligand: the metalloprotein-ligand complex structures were complied from PDBbind-v2020([PDBbind database](http://www.pdbbind.org.cn/)) by [Jiang2023]
+- Metalloprotein-ligand: the metalloprotein-ligand complex structures were complied from PDBbind-v2020 ([PDBbind database](http://www.pdbbind.org.cn/)) by [Jiang2023]
 - Label: the .csv file, which contains the protein ID and corresponding binding affinity for PDBbind data.
 ---
 
@@ -80,22 +80,19 @@ A brief introduction about the benchmark datasets.
 ### I. Generation of PSRT-based features for protein-ligand complex
 Example with PDB 2eg8, generating PSRT features.
 Output: 2eg8-PSRT.npy
-### IV. Generation of sequence-based features for protein and small molecules
+### II. Generation of sequence-based features for protein and small molecules
 Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm) [Rives2021].
 
-Small molecular sequence embeddings were generated with
-[Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels) [Chen2021]. The input small molecular sequence is SMILES string. Instructions on molecular descriptors using this language model is provided in the github.
-
----
+Small molecular sequence embeddings were generated with [Transformer small molecule language model](https://github.com/WeilabMSU/PretrainModels) [Chen2021]. The input small molecular sequence is SMILES string. Instructions on molecular descriptors using this language model is provided in the github.
 
 ## Results
 
-### I. Modeling the Metalloprotein-ligand datasets
+### I. Modeling the (Metallo)protein-ligand datasets
 
 |Datasets                                        | Training Set                  | Test Set| PCC | RMSE (kcal/mol) |
 |-------------------------------------------------|-------------                  |---------|-    |-                |
-| PDBbind-v2016 [result](./Results)      | 3767 | 290 | 0.858 |1.673|
-| Metalloprotein-ligand [result](./Results) |1845| 618 | 0.755 |1.947|
+| PDBbind-v2016 [result](./Results)      |  3767 | 290 | 0.858 |  1.673|
+| Metalloprotein-ligand [result](./Results) |1845| 618 | 0.745/0.755 |  1.947|
 
 
 Note, twenty gradient boosting regressor tree (GBRT) models were built for each dataset with 20 indenpedent runs with different random numbers. The PSRT-based features and transformer-based features were paired with GBRT, respectively. The predictions can be found in the [results](./Results) folder. 
