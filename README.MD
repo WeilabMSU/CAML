@@ -79,7 +79,7 @@ A brief introduction about the benchmark datasets.
 
 ### I. Build machine learning models using PSRT-based features.
 ```shell
-python src/build_model.py
+python src/build_model.py --dataset_name v2016
 ```
 ### II. Generation of sequence-based features for protein and small molecules
 Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm) [Rives2021].

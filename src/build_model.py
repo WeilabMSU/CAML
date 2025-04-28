@@ -63,7 +63,6 @@ if use_norm:
     X_train = scaler.transform(X_train)
     X_test = scaler.transform(X_test)
 
-
 num_tree = 20000
 j = 7
 k = 5
