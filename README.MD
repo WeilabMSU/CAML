@@ -77,9 +77,10 @@ A brief introduction about the benchmark datasets.
 
 ## Modeling with PSRT-based features
 
-### I. Generation of PSRT-based features for protein-ligand complex
-Example with PDB 2eg8, generating PSRT features.
-Output: 2eg8-PSRT.npy
+### I. Build machine learning models using PSRT-based features.
+'''shell
+python src/build_model.py
+'''
 ### II. Generation of sequence-based features for protein and small molecules
 Protein sequence embeddings were generated with [Transformer Protein language model ESM2](https://github.com/facebookresearch/esm) [Rives2021].
 
